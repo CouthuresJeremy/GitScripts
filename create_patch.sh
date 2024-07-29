@@ -20,4 +20,14 @@
 ## Apply the patch:
 # git am /path/to/my_changes.patch
 
+# The following one generate a patch for each commit starting from commit_Id_first (included)
+# git format-patch commit_Id_first~..commit_Id_last
 
+# To output only one file:
+# git format-patch commit_Id_first~..commit_Id_last --stdout > 0001-Modify-annoy.patch
+
+cd annoy
+#git format-patch -1 HEAD
+commit_Id_first=535c819bb3566fc9d40b1b1712482518a397c3d9
+commit_Id_last=HEAD
+git format-patch ${commit_Id_first}~..${commit_Id_last} --stdout > 0001-Modify-annoy.patch
