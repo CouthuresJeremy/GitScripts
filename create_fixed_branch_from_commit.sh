@@ -10,13 +10,13 @@ fork_dir=${working_dir}/${fork_dir}
 cd ${fork_dir}
 
 # Configuration
-CURRENT_BRANCH="Hashing_clean"
+CURRENT_BRANCH="Hashing-dev"
 
 git checkout "$CURRENT_BRANCH"
 
 # Variables
-commit_hash="21884eb772add793a223426a6c735b9d8bf87478"  # Replace ENTER_COMMIT_HASH_HERE with your desired commit hash
-new_branch_name="seed_filter_container_policy"  # Replace ENTER_NEW_BRANCH_NAME_HERE with your desired branch name
+commit_hash="f5cee2884e8fe65654dd0c432bfeff8cb22f0aac"  # Replace ENTER_COMMIT_HASH_HERE with your desired commit hash
+new_branch_name="typos_fix"  # Replace ENTER_NEW_BRANCH_NAME_HERE with your desired branch name
 
 # Check if git is installed
 if ! command -v git &> /dev/null

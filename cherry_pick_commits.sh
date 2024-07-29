@@ -5,10 +5,11 @@ source ./cd_fork.sh
 target_branch="$1"
 start_commit="$2"
 target_branch="Hashing-dev"
-target_branch="Hashing"
-# start_commit is not included
+#target_branch="Hashing"
+# start_commit is not included (= the one just before the first one to include)
 start_commit="53b292e9d89f379fb5051203b91d26ba13eb0902"
 start_commit="80a03ea58b09efbbb1cdf4ba6b42029c90918798"
+start_commit="75ef913a987b2e2405950d82a7ed36b2c0780f71"
 
 # Check if sufficient arguments were provided
 if [ -z "$target_branch" ] || [ -z "$start_commit" ]; then
