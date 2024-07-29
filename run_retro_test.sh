@@ -36,7 +36,8 @@ rm -r "${result_dir}/${output_dir_name}"
 #/bin/python3 ${working_dir}/acts/Examples/Scripts/Python/seeding.py
 #/bin/python3 ${working_dir}/acts/Examples/Scripts/Python/full_chain_odd.py --ttbar --events=20
 #/bin/python3 ${working_dir}/acts/Examples/Scripts/Python/full_chain_odd_hashing.py --mu=$mu --bucketSize=$bucketSize --seedingAlgorithm=$seedingAlgorithm --nevents=$nevents --saveFiles=$saveFiles --metric=$metric --zBins=$zBins --phiBins=$phiBins --maxSeedsPerSpM=$maxSeedsPerSpM
-/bin/python3 ${working_dir}/acts/Examples/Scripts/Python/hashing_seeding.py --mu=$mu --bucketSize=$bucketSize --seedingAlgorithm=$seedingAlgorithm --nevents=$nevents --saveFiles=$saveFiles --metric=$metric --zBins=$zBins --phiBins=$phiBins --maxSeedsPerSpM=$maxSeedsPerSpM
+#/bin/python3 ${working_dir}/acts/Examples/Scripts/Python/hashing_seeding.py --mu=$mu --bucketSize=$bucketSize --seedingAlgorithm=$seedingAlgorithm --nevents=$nevents --saveFiles=$saveFiles --metric=$metric --zBins=$zBins --phiBins=$phiBins --maxSeedsPerSpM=$maxSeedsPerSpM
+/bin/python3 ${working_dir}/acts/Examples/Scripts/Python/hashing_seeding.py
 
 references_dir="/home/couthures/Bureau/HashingWork/results/tests/References"
 active_test_dir="ref_9_jan_2024_to_check"
@@ -61,6 +62,7 @@ active_test_dir="ref_25_apr_2024_hash_e0633f32a4f274313e8be1dc2c1020f742e5ebcf"
 active_test_dir="ref_25_apr_2024"
 active_test_dir="ref_07_jun_2024_57fd232791810cbb1bb5a58f57c73e73c7a4a4e3"
 active_test_dir="ref_10_jun_2024_8ad346b87fa7132078c0fcf6fb1fe603ca721483"
+active_test_dir="ref_03_jul_2024"
 active_test_dir=${references_dir}/${active_test_dir}
 
 test_dir_name=ref_${output_dir_name}
