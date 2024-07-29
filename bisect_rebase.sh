@@ -10,11 +10,11 @@ cd ${fork_dir}
 # Configuration
 REMOTE_NAME="upstream"
 TARGET_BRANCH="main"
-TARGET_BRANCH="seed_filter_container_policy"
+#TARGET_BRANCH="seed_filter_container_policy"
 CURRENT_BRANCH="Hashing-dev"
 #CURRENT_BRANCH="Hashing"
 FULL_TARGET_BRANCH=$REMOTE_NAME/$TARGET_BRANCH
-FULL_TARGET_BRANCH=$TARGET_BRANCH
+#FULL_TARGET_BRANCH=$TARGET_BRANCH
 
 # Ensure we're starting on the current branch
 git checkout "$CURRENT_BRANCH"
