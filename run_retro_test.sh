@@ -63,6 +63,7 @@ active_test_dir="ref_25_apr_2024"
 active_test_dir="ref_07_jun_2024_57fd232791810cbb1bb5a58f57c73e73c7a4a4e3"
 active_test_dir="ref_10_jun_2024_8ad346b87fa7132078c0fcf6fb1fe603ca721483"
 active_test_dir="ref_03_jul_2024"
+active_test_dir="ref_31_jul_2024_hash_41c5a73a2b669ea5889d79c8a7a88318d6e06244"
 active_test_dir=${references_dir}/${active_test_dir}
 
 test_dir_name=ref_${output_dir_name}
