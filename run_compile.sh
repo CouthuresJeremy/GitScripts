@@ -22,7 +22,9 @@ cmake -B ${working_dir}/build -S ${working_dir}/acts \
     -DPythia8_LIBRARY=/home/couthures/softwares_install/pythia8310/lib/libpythia8.so \
     -DPythia8_INCLUDE_DIR=/home/couthures/softwares_install/pythia8310/include \
     -DACTS_BUILD_PLUGIN_GEANT4=off \
-    -DACTS_BUILD_EXAMPLES_GEANT4=off
+    -DACTS_BUILD_EXAMPLES_GEANT4=off \
+    -DPYTHON_EXECUTABLE="/usr/local/bin/python3.10" \
+    -DPYTHON_LIBRARY="/usr/local/lib/libpython3.10.so" 
 
 cmake --build ${working_dir}/build --parallel $(nproc)
 compile_success=$?
