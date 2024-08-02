@@ -24,7 +24,9 @@ cmake -B ${working_dir}/build -S ${working_dir}/acts \
     -DACTS_BUILD_PLUGIN_GEANT4=off \
     -DACTS_BUILD_EXAMPLES_GEANT4=off \
     -DPYTHON_EXECUTABLE="/usr/local/bin/python3.10" \
-    -DPYTHON_LIBRARY="/usr/local/lib/libpython3.10.so" 
+    -DPYTHON_LIBRARY="/usr/local/lib/libpython3.10.so" \
+    -DACTS_BUILD_PLUGIN_HASHING=on \
+    -DACTS_BUILD_EXAMPLES_HASHING=on 
 
 cmake --build ${working_dir}/build --parallel $(nproc)
 compile_success=$?
