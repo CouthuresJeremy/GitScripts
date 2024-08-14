@@ -33,7 +33,7 @@ metric=dphi
 zBins=100000
 phiBins=0
 maxSeedsPerSpM=1000
-output_dir_name="detector_generic_output_hashing_mu_${mu}_bucket_${bucketSize}_maxSeedsPerSpM_${maxSeedsPerSpM}_seedFinderConfig_TrackML_seedingAlgorithm_${seedingAlgorithm}Seeding_metric_${metric}_AnnoySeed_123456789_zBins_${zBins}"
+output_dir_name="detector_generic_output_hashing_mu_${mu}_bucket_${bucketSize}_maxSeedsPerSpM_${maxSeedsPerSpM}_seedFinderConfig_TrackML_seedingAlgorithm_${seedingAlgorithm}Seeding_metric_${metric}_annoySeed_123456789_zBins_${zBins}"
 rm -r "${result_dir}/${output_dir_name}"
 #/bin/python3 ${working_dir}/acts/Examples/Scripts/Python/seeding.py
 #/bin/python3 ${working_dir}/acts/Examples/Scripts/Python/full_chain_odd.py --ttbar --events=20
@@ -75,6 +75,7 @@ active_test_dir="ref_01_aug_2024_hash_e10a868ffdc3b8dc13574a47877b5cb591935740"
 active_test_dir="ref_06_aug_2024_hash_5ca5ec0bbfcbf98afae83a8a7d29b08cac7834db"
 active_test_dir="ref_12_aug_2024_hash_ca697991df842e13f7897cd3f793038860f822c7"
 active_test_dir="ref_12_aug_2024_hash_223cba28a59a0c8ce3dbc80782033c1b21f8bd5e"
+active_test_dir="ref_14_aug_2024"
 active_test_dir=${references_dir}/${active_test_dir}
 
 test_dir_name=ref_${output_dir_name}

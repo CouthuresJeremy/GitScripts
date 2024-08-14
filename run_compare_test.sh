@@ -22,9 +22,10 @@ active_test_dir="ref_10_apr_2024_hash_1df91751ccfa8eb4ff61c2d10554208c089cd089_t
 active_test_dir="ref_11_apr_2024_hash_69f72174dce3bd8153f459a7acb5ff437d2345fb"
 active_test_dir="ref_25_apr_2024_hash_e0633f32a4f274313e8be1dc2c1020f742e5ebcf"
 active_test_dir="ref_25_apr_2024"
+active_test_dir="ref_12_aug_2024_hash_223cba28a59a0c8ce3dbc80782033c1b21f8bd5e"
 active_test_dir=${references_dir}/${active_test_dir}
 
-output_dir_name="detector_generic_output_hashing_mu_${mu}_bucket_${bucketSize}_maxSeedsPerSpM_${maxSeedsPerSpM}_seedFinderConfig_TrackML_seedingAlgorithm_${seedingAlgorithm}_metric_${metric}_AnnoySeed_123456789_zBins_${zBins}"
+output_dir_name="detector_generic_output_hashing_mu_${mu}_bucket_${bucketSize}_maxSeedsPerSpM_${maxSeedsPerSpM}_seedFinderConfig_TrackML_seedingAlgorithm_${seedingAlgorithm}_metric_${metric}_annoySeed_123456789_zBins_${zBins}"
 test_dir_name=ref_${output_dir_name}
 test_dir_name=${output_dir_name}
 
