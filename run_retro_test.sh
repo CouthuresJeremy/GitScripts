@@ -4,11 +4,13 @@ working_dir="/home/couthures/Bureau/HashingWork/Github"
 
 repository_dir="${working_dir}/acts"
 
-export LD_LIBRARY_PATH="${working_dir}/build/thirdparty/OpenDataDetector/factory${LD_LIBRARY_PATH:+:}${LD_LIBRARY_PATH}"
-source ~/Bureau/DD4hep/build/bin/thisdd4hep.sh
+# set -x
+# export LD_LIBRARY_PATH="${working_dir}/build/thirdparty/OpenDataDetector/factory${LD_LIBRARY_PATH:+:}${LD_LIBRARY_PATH}"
+# source ~/Bureau/DD4hep/build/bin/thisdd4hep.sh
 source ${working_dir}/build/this_acts.sh
 source ${working_dir}/build/python/setup.sh 
-source ~/softwares_install/root/bin/thisroot.sh
+# source ~/softwares_install/root_install/bin/thisroot.sh
+# set +x
 
 
 result_dir="/home/couthures/Bureau/HashingWork/results/tests"
@@ -64,6 +66,15 @@ active_test_dir="ref_07_jun_2024_57fd232791810cbb1bb5a58f57c73e73c7a4a4e3"
 active_test_dir="ref_10_jun_2024_8ad346b87fa7132078c0fcf6fb1fe603ca721483"
 active_test_dir="ref_03_jul_2024"
 active_test_dir="ref_31_jul_2024_hash_41c5a73a2b669ea5889d79c8a7a88318d6e06244"
+active_test_dir="ref_31_jul_2024_hash_625f3bcecd5d1738f758983ced1ee41e6d44aee2"
+active_test_dir="ref_31_jul_2024_hash_df0e54dc4f4179d213439e2cfbe6c55722c42ed5"
+active_test_dir="ref_01_aug_hash_b58a4b404efdc86401e5adb077d8431de4152869"
+active_test_dir="ref_01_aug_hash_b2fb7fd1520eee87a99766cf8c8ebacdfb7d0571"
+active_test_dir="ref_01_aug_2024_hash_b5f69b99790f5de25aebb740f4f201b79b98a83d"
+active_test_dir="ref_01_aug_2024_hash_e10a868ffdc3b8dc13574a47877b5cb591935740"
+active_test_dir="ref_06_aug_2024_hash_5ca5ec0bbfcbf98afae83a8a7d29b08cac7834db"
+active_test_dir="ref_12_aug_2024_hash_ca697991df842e13f7897cd3f793038860f822c7"
+active_test_dir="ref_12_aug_2024_hash_223cba28a59a0c8ce3dbc80782033c1b21f8bd5e"
 active_test_dir=${references_dir}/${active_test_dir}
 
 test_dir_name=ref_${output_dir_name}
