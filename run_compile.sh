@@ -29,6 +29,20 @@ cmake -B ${working_dir}/build -S ${working_dir}/acts \
     -DACTS_BUILD_EXAMPLES_HASHING=on 
 
 cmake --build ${working_dir}/build --parallel $(nproc)
+
+# No Hashing
+# cmake -B ${working_dir}/buildNoHash -S ${working_dir}/acts \
+#     -DACTS_BUILD_EXAMPLES_PYTHON_BINDINGS=on \
+#     -DACTS_BUILD_ANALYSIS_APPS=on \
+#     -DACTS_BUILD_EXAMPLES_PYTHIA8=on \
+#     -DLCIO_DIR=/home/couthures/softwares_install/LCIO \
+#     -DPythia8_LIBRARY=/home/couthures/softwares_install/pythia8310/lib/libpythia8.so \
+#     -DPythia8_INCLUDE_DIR=/home/couthures/softwares_install/pythia8310/include \
+#     -DPYTHON_EXECUTABLE="/usr/local/bin/python3.10" \
+#     -DPYTHON_LIBRARY="/usr/local/lib/libpython3.10.so"
+
+# cmake --build ${working_dir}/buildNoHash --parallel $(nproc)
+
 compile_success=$?
 if [[ $compile_success -eq 0 ]]; then
     echo Good compilation

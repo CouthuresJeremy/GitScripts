@@ -27,7 +27,7 @@ maxSeedsPerSpM=1000
 output_dir_name="detector_generic_output_hashing_mu_${mu}_bucket_${bucketSize}_maxSeedsPerSpM_${maxSeedsPerSpM}_seedFinderConfig_TrackML_seedingAlgorithm_${seedingAlgorithm}Seeding_metric_${metric}_annoySeed_123456789_zBins_${zBins}"
 
 references_dir="/home/couthures/Bureau/HashingWork/results/tests/References"
-active_test_dir="ref_14_aug_2024"
+active_test_dir="ref_30_aug_2024_hash_809b378e51249733567ae24bffe6cdffa9058503"
 active_test_dir=${references_dir}/${active_test_dir}
 
 test_dir_name=${output_dir_name}

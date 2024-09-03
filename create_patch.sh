@@ -29,5 +29,6 @@
 cd annoy
 #git format-patch -1 HEAD
 commit_Id_first=535c819bb3566fc9d40b1b1712482518a397c3d9
+commit_Id_first=2800224414b9844f9bf10ca1ec7b2941af0e79d2
 commit_Id_last=HEAD
 git format-patch ${commit_Id_first}~..${commit_Id_last} --stdout > 0001-Modify-annoy.patch
